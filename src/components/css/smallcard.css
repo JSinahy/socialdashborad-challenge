@@ -1,0 +1,46 @@
+.card-small{
+    top: -20px;
+    height: 120px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    background: var(--grayish-blue);
+    background-color: var(--grayish-blue);
+    margin-bottom: 32px;
+    color: var(--dark-grayish-blue);
+    vertical-align: middle;
+    padding: 16px;
+}
+
+.title{
+    width: 100%;
+    padding-left: 16px;
+    font-size: 0.8em;
+    color: var(--dark-grayish-blue);
+    font-family: 'InterBold', Arial, sans-serif;
+}
+.quantity{
+    width: 100%;
+    padding-left: 16px;
+    font-size: 1.4em;
+    color: #000;
+    font-family: 'InterBold', Arial, sans-serif;
+}
+
+.vertical{
+    vertical-align: middle;
+}
+
+.up{
+    font-family: 'InterBold', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: var(--lime-green);
+    font-size: 1.0em;
+}
+.down{
+    font-family: 'InterBold', Arial, sans-serif;
+    font-size: 1.0em;
+    color: var(--youtube);
+}

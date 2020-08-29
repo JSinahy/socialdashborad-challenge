@@ -1,0 +1,159 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');*/
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Inter-Regular-slnt=0.ttf");
+}
+@font-face {
+  font-family: "InterBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Inter-Bold-slnt=0.ttf");
+}
+
+[data-theme="dark"]{
+  --toogle-min: #378fe6;
+  --toogle-max: #3eda82;
+
+  --dark-blue: #1e202a;
+  --very-dark-blue: #1f212e;
+  --dark-desaturated-blue: #252a41;
+  --desaturated-blue: #8b97c6;
+
+  --very-pale-blue: #1f212e;
+  --grayish-blue: #252a41;
+  --dark-grayish-blue: #fff;
+}
+
+:root {
+  --lime-green: #1db489;
+  --bright-red: #dc414c;
+  --facebook: #198ff5;
+  --twitter: #1ca0f2;
+  --instagram-min: #fdc468;
+  --instagram-max: #df4996;
+  --youtube: #c4032a;
+  --white: #fff;
+  --black: #000;
+
+  /* =============================================== */
+  /* DARK THEME ---------- */
+  
+
+  /* =============================================== */
+  /* LGHT THEME ---------- */
+  --very-pale-blue: #f5f7ff;
+  --grayish-blue: #f0f2fa;
+  --dark-grayish-blue: #63687e;
+
+  /*------------------------------------------------- */
+  /* TAMANOS DE LAS FUENTAS */
+  /*------------------------------------------------- */
+  --title: 1.2em;
+  --subtitle: 0.6em;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(55, 143, 230, 1) 0%,
+    rgba(62, 218, 130, 1) 90%
+  );
+  background-color: linear-gradient(
+    90deg,
+    rgba(55, 143, 230, 1) 0%,
+    rgba(62, 218, 130, 1) 90%
+  );
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:hover {
+  -webkit-box-shadow: -8px 8px 22px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 8px 22px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 8px 22px -9px rgba(0, 0, 0, 0.75);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: #ccc;
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.footer {
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--dark-grayish-blue);
+  font-size: 0.6em;
+  text-decoration: none;
+}
+a {
+  font-family: "InterBold", Arial, sans-serif;
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background: var(--dark-desaturated-blue);
+  }
+  .line {
+    /* margin-top: 32px; */
+    /* margin-left: 16px; */
+    /* margin-right: 16px; */
+    padding-bottom: 16px;
+    width: 100%;
+    border-bottom: 2px solid var(--dark-grayish-blue);
+    margin-bottom: 12px;
+  }
+}

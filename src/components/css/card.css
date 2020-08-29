@@ -1,0 +1,99 @@
+.card{
+    top: -80px;
+    height: 200px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    background: var(--grayish-blue);
+    background-color: var(--grayish-blue);
+    margin-bottom: 22px;
+    color: var(--dark-grayish-blue);
+    
+}
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-body .icon{
+    color: var(--dark-grayish-blue);
+    font-size: 12px;
+    font-family: 'InterBold', Arial, sans-serif;
+}
+.card-insight{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'InterBold', Arial, sans-serif;
+    color: black;
+    font-size: 2.5em;
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Inter', Arial, sans-serif;
+    color: var(--dark-grayish-blue);
+    font-size: 0.5em;
+    letter-spacing: 5px;
+}
+
+
+.line-card{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 6px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.line-facebook{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--facebook);
+}
+
+.line-twitter{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--twitter);
+}
+
+.line-instagram{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 4px;
+    width: 100%;
+    background: rgb(253,196,104);
+    background: linear-gradient(90deg, rgba(253,196,104,1) 0%, rgba(223,73,150,1) 90%);
+}
+
+.line-youtube{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 4px;
+    width: 100%;
+    background: var(--youtube);
+    
+}
+
+.footer.up{
+    font-family: 'InterBold', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: var(--lime-green);
+    font-size: 0.4em;
+    margin-left: -25px;
+}
+.footer .down{
+    color: var(--youtube);
+}
+img.down{
+    transform: rotate(180deg);
+    color: var(--youtube);
+}
